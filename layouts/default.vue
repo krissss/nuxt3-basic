@@ -2,12 +2,16 @@
 
 <template>
   <div>
-    <AppHeader/>
-    <div style="padding: 20px 0">
+    <AppHeader />
+    <div class="content">
       <slot />
     </div>
-    <AppFooter/>
+    <AppFooter />
   </div>
 </template>
 
-<style scoped></style>
+<style scoped lang="scss">
+.content {
+  min-height: 300px;
+}
+</style>

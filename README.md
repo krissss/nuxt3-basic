@@ -6,6 +6,13 @@
 
 features:
 
+- eslint
+- stylelint
+- prettier
+- husky
+- lint-staged
+- sass
+
 ## 开发
 
 先安装 pnpm: 未安装的通过 `npm install -g pnpm` 安装
