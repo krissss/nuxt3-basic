@@ -22,12 +22,14 @@
   border-bottom: 1px solid #eaeaea;
 
   .logo-container {
-    padding-left: 20px;
     display: flex;
     align-items: center;
+    padding-left: 20px;
+
     .logo-img {
       width: 40px;
     }
+
     .logo-name {
       margin-left: 10px;
       font-weight: bold;

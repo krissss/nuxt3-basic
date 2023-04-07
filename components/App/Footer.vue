@@ -8,9 +8,9 @@
 footer {
   position: absolute;
   bottom: 0;
-  border-top: 1px solid #ccc;
   width: 100%;
   padding: 20px 0;
   text-align: center;
+  border-top: 1px solid #ccc;
 }
 </style>

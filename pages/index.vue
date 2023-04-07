@@ -1,9 +1,5 @@
 <script lang="ts" setup></script>
 
 <template>
-  <div>
-    index
-  </div>
+  <div>index</div>
 </template>
-
-<style scoped></style>
