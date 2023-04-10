@@ -8,9 +8,9 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "format:all": "prettier **/*.{js,ts,vue,css,scss,postcss,json,md,yaml} --write",
-    "lint:es": "eslint --cache **/*.{js,ts,vue} . --fix",
-    "lint:style": "stylelint --cache --fix **/*.{vue,css,scss}"
+    "format:all": "prettier src/**/* --write",
+    "lint:es": "eslint --cache src/**/*.{js,ts,vue} . --fix",
+    "lint:style": "stylelint --cache --fix src/**/*.{vue,css,scss}"
   },
   "dependencies": {
     "sass": "^1.61.0"
