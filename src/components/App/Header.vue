@@ -3,7 +3,7 @@
 <template>
   <header class="header">
     <div class="logo-container" @click="navigateTo('/')">
-      <img class="logo-img" src="/favicon.ico" alt="" />
+      <img class="logo-img" src="~/assets/images/logo.png" alt="" />
       <span class="logo-name">{{ useAppConfig().appName }}</span>
     </div>
     <div class="menu">
