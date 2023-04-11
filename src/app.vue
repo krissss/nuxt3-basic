@@ -7,12 +7,5 @@
 </template>
 
 <style lang="scss">
-@import './assets/css/variables';
-
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  background: $main-bg-color;
-}
+@import '@/assets/css/app.scss';
 </style>
