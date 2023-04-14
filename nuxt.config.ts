@@ -10,6 +10,18 @@ export default defineNuxtConfig({
   app: {
     pageTransition: { name: 'page', mode: 'out-in' },
   },
+  css: ['@/assets/scss/index.scss'],
+  vite: {
+    css: {
+      preprocessorOptions: {
+        scss: {
+          additionalData: `
+            @use "@/assets/scss/var.scss" as *;
+          `,
+        },
+      },
+    },
+  },
   hooks: {
     'pages:extend'(pages: NuxtPage[]) {
       // remove routes

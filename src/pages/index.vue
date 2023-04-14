@@ -5,9 +5,7 @@
 </template>
 
 <style scoped lang="scss">
-@use '@/assets/css/var.scss';
-
 .color {
-  color: var.$color-primary;
+  color: get-var($color, 'primary');
 }
 </style>

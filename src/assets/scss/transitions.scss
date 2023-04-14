@@ -1,0 +1,13 @@
+// transitions https://nuxt.com/docs/getting-started/transitions
+@use './var';
+
+.page-enter-active,
+.page-leave-active {
+  transition: all var.get-var(var.$transition, 'duration');
+}
+
+.page-enter-from,
+.page-leave-to {
+  filter: blur(1rem);
+  opacity: 0;
+}
