@@ -22,6 +22,9 @@ export default defineNuxtConfig({
       },
     },
   },
+  imports: {
+    dirs: ['composables/**/*.ts'],
+  },
   hooks: {
     'pages:extend'(pages: NuxtPage[]) {
       // remove routes
@@ -40,5 +43,14 @@ export default defineNuxtConfig({
       }
       removePagesMatching(/\/__/, pages)
     },
+  },
+  modules: [
+    // https://nuxt.com.cn/modules/vueuse
+    '@vueuse/nuxt',
+    // https://nuxt.com.cn/modules/pinia
+    '@pinia/nuxt',
+  ],
+  pinia: {
+    autoImports: [['defineStore', 'definePiniaStore']],
   },
 })

@@ -13,6 +13,9 @@
     "lint:style": "stylelint --cache --fix src/**/*.{vue,css,scss}"
   },
   "dependencies": {
+    "@pinia/nuxt": "^0.4.8",
+    "@vueuse/core": "^9.13.0",
+    "@vueuse/nuxt": "^9.13.0",
     "sass": "^1.61.0"
   },
   "devDependencies": {

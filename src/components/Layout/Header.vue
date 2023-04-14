@@ -9,6 +9,7 @@
     <div class="menu">
       <div class="item"><NuxtLink to="/">Home</NuxtLink></div>
       <div class="item"><NuxtLink to="/about">About</NuxtLink></div>
+      <div class="item"><NuxtLink to="/user">User</NuxtLink></div>
     </div>
   </header>
 </template>
