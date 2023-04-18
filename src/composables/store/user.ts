@@ -1,13 +1,13 @@
 export const useStoreUser = definePiniaStore('user', {
   state: () => {
     return {
-      user: useIStorage<Partial<TypeApp.User>>('user', {}),
+      user: null as TypeApp.User | null,
       loginRedirect: '',
     }
   },
   getters: {
-    isLogin: state => !!state.user.id,
-    name: state => state.user.name,
+    isLogin: state => !!state.user?.id,
+    name: state => state.user?.name ?? '',
   },
   actions: {
     async login(username: string, password: string) {
@@ -21,7 +21,10 @@ export const useStoreUser = definePiniaStore('user', {
     },
     async logout() {
       await promiseSleep(500)
-      this.user = {}
+      this.user = null
     },
+  },
+  persist: {
+    paths: ['user'],
   },
 })

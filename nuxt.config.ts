@@ -49,6 +49,8 @@ export default defineNuxtConfig({
     '@vueuse/nuxt',
     // https://nuxt.com.cn/modules/pinia
     '@pinia/nuxt',
+    // https://nuxt.com.cn/modules/pinia-plugin-persistedstate
+    '@pinia-plugin-persistedstate/nuxt',
   ],
   pinia: {
     autoImports: [['defineStore', 'definePiniaStore']],
