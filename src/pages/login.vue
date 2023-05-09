@@ -6,13 +6,14 @@ const form = reactive({
 
 const storeUser = useStoreUser()
 
-const handleLogin = async () => {
+async function handleLogin() {
   await storeUser.login(form.username, form.password)
   const redirect = storeUser.loginRedirect
   if (redirect) {
     storeUser.loginRedirect = ''
     navigateTo(redirect)
-  } else {
+  }
+  else {
     navigateTo('/')
   }
 }
@@ -20,8 +21,12 @@ const handleLogin = async () => {
 
 <template>
   <div>
-    <div>username: <input v-model="form.username" type="text" /></div>
-    <div>password: <input v-model="form.password" type="password" /></div>
-    <div><button @click="handleLogin()">登录</button></div>
+    <div>username: <input v-model="form.username" type="text"></div>
+    <div>password: <input v-model="form.password" type="password"></div>
+    <div>
+      <button @click="handleLogin()">
+        登录
+      </button>
+    </div>
   </div>
 </template>

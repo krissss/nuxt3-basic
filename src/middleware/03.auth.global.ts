@@ -1,6 +1,6 @@
 import { msgToast } from '~/utils/msg'
 
-export default defineNuxtRouteMiddleware(to => {
+export default defineNuxtRouteMiddleware((to) => {
   const permissionPaths = ['/user']
 
   const storeUser = useStoreUser()

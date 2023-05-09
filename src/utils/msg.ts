@@ -5,6 +5,7 @@ export const msgToast = {
       return
     }
     // 客户端弹出提示
+    // eslint-disable-next-line no-alert
     alert(`${type.toUpperCase()}: ${message}`)
   },
   error(msg: string) {

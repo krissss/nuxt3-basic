@@ -6,6 +6,10 @@ const counter = usePageCounter()
 
 <template>
   <div>
-    <div><button @click="counter++">Right</button>: {{ counter }}</div>
+    <div>
+      <button @click="counter++">
+        Right
+      </button>: {{ counter }}
+    </div>
   </div>
 </template>

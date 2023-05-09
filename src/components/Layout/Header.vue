@@ -3,13 +3,25 @@
 <template>
   <header class="header">
     <div class="logo-container" @click="navigateTo('/')">
-      <img class="logo-img" src="~/assets/images/logo.png" alt="" />
+      <img class="logo-img" src="~/assets/images/logo.png" alt="">
       <span class="logo-name">{{ useAppConfig().appName }}</span>
     </div>
     <div class="menu">
-      <div class="item"><NuxtLink to="/">Home</NuxtLink></div>
-      <div class="item"><NuxtLink to="/about">About</NuxtLink></div>
-      <div class="item"><NuxtLink to="/user">User</NuxtLink></div>
+      <div class="item">
+        <NuxtLink to="/">
+          Home
+        </NuxtLink>
+      </div>
+      <div class="item">
+        <NuxtLink to="/about">
+          About
+        </NuxtLink>
+      </div>
+      <div class="item">
+        <NuxtLink to="/user">
+          User
+        </NuxtLink>
+      </div>
     </div>
   </header>
 </template>

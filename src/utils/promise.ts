@@ -1,5 +1,5 @@
-export const promiseSleep = (ts: number) => {
-  return new Promise<void>(resolve => {
+export function promiseSleep(ts: number) {
+  return new Promise<void>((resolve) => {
     setTimeout(() => resolve(), ts)
   })
 }

@@ -1,5 +1,5 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
-import { NuxtPage } from '@nuxt/schema'
+import type { NuxtPage } from '@nuxt/schema'
 
 export default defineNuxtConfig({
   srcDir: 'src',
@@ -26,14 +26,15 @@ export default defineNuxtConfig({
     dirs: ['composables/**/*.ts'],
   },
   hooks: {
-    'pages:extend'(pages: NuxtPage[]) {
+    'pages:extend': function (pages: NuxtPage[]) {
       // remove routes
       function removePagesMatching(pattern: RegExp, pages: NuxtPage[] = []) {
         const pagesToRemove = []
         for (const page of pages) {
           if (pattern.test(page.path)) {
             pagesToRemove.push(page)
-          } else {
+          }
+          else {
             removePagesMatching(pattern, page.children)
           }
         }
