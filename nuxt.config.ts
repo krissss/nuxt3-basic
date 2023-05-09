@@ -55,8 +55,17 @@ export default defineNuxtConfig({
     '@pinia/nuxt',
     // https://nuxt.com.cn/modules/pinia-plugin-persistedstate
     '@pinia-plugin-persistedstate/nuxt',
+    // https://unocss.dev/integrations/nuxt
+    '@unocss/nuxt',
+    // https://nuxt.com.cn/modules/lodash
+    'nuxt-lodash',
   ],
   pinia: {
     autoImports: [['defineStore', 'definePiniaStore']],
+  },
+  lodash: {
+    prefix: '__',
+    prefixSkip: false,
+    upperAfterPrefix: false,
   },
 })

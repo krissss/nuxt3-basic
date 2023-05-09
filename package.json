@@ -17,11 +17,13 @@
     "@pinia-plugin-persistedstate/nuxt": "^1.1.1",
     "@pinia/nuxt": "^0.4.10",
     "@types/node": "^20.1.1",
+    "@unocss/nuxt": "^0.51.12",
     "@vueuse/nuxt": "^10.1.2",
     "eslint": "^8.40.0",
     "husky": "^8.0.3",
     "lint-staged": "^13.2.2",
     "nuxt": "^3.4.3",
+    "nuxt-lodash": "^2.4.1",
     "sass": "^1.62.1",
     "typescript": "^5.0.4"
   },

@@ -2,9 +2,9 @@
 
 <template>
   <header class="header">
-    <div class="logo-container" @click="navigateTo('/')">
-      <img class="logo-img" src="~/assets/images/logo.png" alt="">
-      <span class="logo-name">{{ useAppConfig().appName }}</span>
+    <div class="flex items-center pl-5" @click="navigateTo('/')">
+      <img class="w-10" src="~/assets/images/logo.png" alt="">
+      <span class="ml-2.5 font-bold">{{ useAppConfig().appName }}</span>
     </div>
     <div class="menu">
       <div class="item">
@@ -28,34 +28,14 @@
 
 <style scoped lang="scss">
 .header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px 0;
+  @apply flex items-center justify-between py-2.5;
   border-bottom: 1px solid #eaeaea;
 
-  .logo-container {
-    display: flex;
-    align-items: center;
-    padding-left: 20px;
-
-    .logo-img {
-      width: 40px;
-    }
-
-    .logo-name {
-      margin-left: 10px;
-      font-weight: bold;
-    }
-  }
-
   .menu {
-    display: flex;
-    align-items: center;
-    margin-right: 20px;
+    @apply flex items-center mr-5;
 
     .item {
-      margin-right: 10px;
+      @apply mr-2.5;
     }
   }
 }
