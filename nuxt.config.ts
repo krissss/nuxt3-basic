@@ -45,6 +45,9 @@ export default defineNuxtConfig({
       removePagesMatching(/\/__/, pages)
     },
   },
+  devtools: {
+    enabled: true,
+  },
   modules: [
     // https://nuxt.com.cn/modules/vueuse
     '@vueuse/nuxt',
