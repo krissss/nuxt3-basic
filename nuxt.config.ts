@@ -10,6 +10,12 @@ export default defineNuxtConfig({
   app: {
     pageTransition: { name: 'page', mode: 'out-in' },
   },
+  runtimeConfig: {
+    api: {
+      base_url: '', // 接口代理地址
+      log: false, // 记录 proxy log
+    },
+  },
   css: ['@/assets/scss/index.scss'],
   vite: {
     css: {
