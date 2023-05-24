@@ -12,8 +12,8 @@ export default defineNuxtConfig({
   },
   runtimeConfig: {
     api: {
-      base_url: process.env.NUXT_API_BASE_URL || '',
-      log: !!(process.env.NUXT_API_LOG || false),
+      baseUrl: '',
+      log: false,
     },
   },
   css: ['@/assets/scss/index.scss'],
