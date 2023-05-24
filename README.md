@@ -30,3 +30,22 @@ pnpm dev
 - 新建页面：`npx nuxi add page xx/yy`
 - 新建组件：`npx nuxi add component Xxx/Yyy`
 - 其他命令参考：[文档](https://nuxt.com/docs/api/commands/add)
+
+## docker
+
+- docker build -t [name] --build-arg APP_ENV=[env] .
+- docker push [name]
+
+docker-compose.yml 例子
+
+```yml
+version: '3.7'
+
+services:
+  web:
+    image: xxx/xx
+    container_name: web
+    restart: always
+    ports:
+      - '{对外的端口}:3000'
+```

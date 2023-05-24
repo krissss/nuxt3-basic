@@ -1,0 +1,10 @@
+version: '3.7'
+
+services:
+  app:
+    build:
+      context: .
+      args:
+        - 'APP_ENV:${APP_ENV:-}'
+    ports:
+      - '${APP_PORT:-3000}:3000'

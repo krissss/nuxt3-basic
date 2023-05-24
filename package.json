@@ -3,8 +3,9 @@
   "private": true,
   "scripts": {
     "prepare": "node .husky/prepare.js",
-    "build": "nuxt build",
     "dev": "nuxt dev",
+    "build": "nuxt build",
+    "serve": "node .output/server/index.mjs",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",

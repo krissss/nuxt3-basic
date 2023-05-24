@@ -12,8 +12,8 @@ export default defineNuxtConfig({
   },
   runtimeConfig: {
     api: {
-      base_url: '', // 接口代理地址
-      log: false, // 记录 proxy log
+      base_url: process.env.NUXT_API_BASE_URL || '',
+      log: !!(process.env.NUXT_API_LOG || false),
     },
   },
   css: ['@/assets/scss/index.scss'],
@@ -37,7 +37,7 @@ export default defineNuxtConfig({
       function removePagesMatching(pattern: RegExp, pages: NuxtPage[] = []) {
         const pagesToRemove = []
         for (const page of pages) {
-          if (pattern.test(page.path)) {
+          if (pattern.test(`/${page.path}`)) {
             pagesToRemove.push(page)
           }
           else {
