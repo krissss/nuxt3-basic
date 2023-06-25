@@ -3,6 +3,7 @@ module.exports = {
   root: true,
   extends: [
     '@antfu', // https://github.com/antfu/eslint-config
+    '@unocss', // https://unocss.dev/integrations/eslint
   ],
   rules: {
     // 覆盖 @antfu 中的配置
