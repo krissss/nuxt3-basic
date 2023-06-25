@@ -12,21 +12,22 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix"
   },
-  "devDependencies": {
-    "@antfu/eslint-config": "^0.38.6",
-    "@nuxt/devtools": "^0.4.6",
+  "dependencies": {
     "@pinia-plugin-persistedstate/nuxt": "^1.1.1",
-    "@pinia/nuxt": "^0.4.10",
-    "@types/node": "^20.1.1",
-    "@unocss/nuxt": "^0.51.12",
-    "@vueuse/nuxt": "^10.1.2",
-    "eslint": "^8.40.0",
+    "@pinia/nuxt": "^0.4.11",
+    "@unocss/nuxt": "^0.53.3",
+    "@vueuse/nuxt": "^10.2.0",
+    "nuxt": "^3.6.0",
+    "nuxt-lodash": "^2.5.0",
+    "sass": "^1.63.6"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^0.39.5",
+    "@nuxt/devtools": "latest",
+    "@types/node": "^18",
+    "eslint": "^8.43.0",
     "husky": "^8.0.3",
-    "lint-staged": "^13.2.2",
-    "nuxt": "^3.4.3",
-    "nuxt-lodash": "^2.4.1",
-    "sass": "^1.62.1",
-    "typescript": "^5.0.4"
+    "lint-staged": "^13.2.2"
   },
   "lint-staged": {
     "*": [

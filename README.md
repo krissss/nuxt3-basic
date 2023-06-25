@@ -6,12 +6,14 @@
 
 features:
 
+- unocss
+- sass
+- lodash
+- pinia
+- vueuse
 - eslint
-- stylelint
-- prettier
 - husky
 - lint-staged
-- sass
 
 ## 开发
 
